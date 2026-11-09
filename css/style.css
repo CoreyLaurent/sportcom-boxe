@@ -1,3 +1,87 @@
 /* Projet Boxe - Sport.com - Corey Laurent */
 /* Une seule feuille de style pour les deux pages */
 
+/* ===== RÉGLAGES GÉNÉRAUX ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Largeur du contenu : 1040 px, centrée */
+.conteneur {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.orange {
+  color: #ea9f05;
+}
+
+/* ===== EN-TÊTE ===== */
+.entete {
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.entete-contenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 15px;
+}
+
+.logo {
+  display: block;
+}
+
+.slogan {
+  font-size: 22px;
+  margin: 15px 0 0;
+}
+
+.entete-droite {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.bonjour {
+  font-size: 22px;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menu a:hover {
+  color: #ea9f05;
+}
+
+/* ===== ZONE DE CONTENU ===== */
+.contenu {
+  background-color: #f2f2f2;
+  min-height: 300px;
+  margin-top: 20px;
+}
