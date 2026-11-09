@@ -90,28 +90,21 @@ img {
   background-color: #3a3a3a;
   color: #fff;
   padding-bottom: 20px;
-  .pied {
-    display: flow-root;
-    background-color: #3a3a3a;
-    color: #fff;
-    padding-bottom: 20px;
-  }
 }
-
 /* Menu blanc arrondi, à cheval sur le contenu */
 .menu-pied {
   position: relative;
+  top: -25px;
   display: flex;
   justify-content: center;
   gap: 20px;
   list-style: none;
   background-color: #fff;
   max-width: 510px;
-  margin: -25px auto 0;
+  margin: 0 auto -25px;
   padding: 15px 30px;
   border-radius: 8px;
 }
-
 /* Petit rond gris entre les liens */
 .menu-pied li + li::before {
   content: "●";
@@ -166,4 +159,92 @@ img {
   text-align: center;
   font-size: 13px;
   margin: 0;
+}
+/* ===== CATALOGUE ===== */
+/* Titre invisible à l'écran mais lu par les lecteurs d'écran */
+.titre-cache {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.banniere {
+  display: block;
+  width: 100%;
+}
+/* Les produits sur 2 colonnes */
+.catalogue {
+  display: grid;
+  grid-template-columns: repeat(2, 362px);
+  justify-content: center;
+  gap: 70px 100px;
+  padding: 45px 0 100px;
+}
+
+/* Cadre blanc : image + nom */
+.carte {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.carte img {
+  display: block;
+  width: 100%;
+}
+
+/* Bandeau "- 45%" posé en haut à droite */
+.remise {
+  position: absolute;
+  top: 12px;
+  right: -25px;
+  background-color: #1c1c1c;
+  color: #ea9f05;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.produit-nom {
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 10px 0 0;
+}
+
+/* Bouton + prix sur une ligne */
+.produit-bas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  padding: 0 8px;
+}
+
+.bouton {
+  background: linear-gradient(#3a3a3a, #1c1c1c);
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 7px 35px;
+}
+
+.bouton:hover {
+  background: #ea9f05;
+}
+
+.prix {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.prix del {
+  color: #555;
+  margin-right: 12px;
 }
