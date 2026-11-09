@@ -248,3 +248,54 @@ img {
   color: #555;
   margin-right: 12px;
 }
+/* ===== PAGE QUI SOMMES-NOUS ===== */
+/* Bandeau de titre sombre avec trait orange */
+.intro {
+  background-color: #222;
+  color: #fff;
+  padding: 35px 40px 30px;
+  border-bottom: 4px solid #ea9f05;
+}
+
+.intro h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.intro p {
+  margin: 0;
+  color: #ddd;
+}
+
+.page {
+  padding: 10px 40px 60px;
+}
+
+/* Titres de section avec barre orange à gauche */
+.titre-section {
+  border-left: 5px solid #ea9f05;
+  padding-left: 12px;
+  font-size: 24px;
+  margin: 40px 0 20px;
+}
+
+/* Notre histoire : texte à gauche, image à droite */
+.histoire {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.histoire-texte {
+  flex: 1;
+}
+
+.histoire-texte p {
+  line-height: 1.6;
+}
+
+.histoire-image {
+  width: 260px;
+  background-color: #fff;
+  padding: 15px;
+}
