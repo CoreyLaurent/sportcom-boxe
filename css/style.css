@@ -395,7 +395,7 @@ address {
 }
 
 /* Carte OpenStreetMap */
-.carte {
+.plan {
   width: 100%;
   height: 300px;
   border: 0;
@@ -441,4 +441,136 @@ address {
   justify-self: start;
   border: 0;
   cursor: pointer;
+}
+
+/* ===== RESPONSIVE : téléphone (moins de 576 px) ===== */
+@media (max-width: 575px) {
+  /* En-tête centré et empilé */
+  .entete-contenu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px 15px;
+  }
+
+  .logo {
+    width: 220px;
+    margin: 0 auto;
+  }
+
+  .slogan,
+  .bonjour {
+    font-size: 18px;
+  }
+
+  .entete-droite {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+  }
+
+  /* Catalogue : produits sur une colonne */
+  .catalogue {
+    grid-template-columns: minmax(0, 300px);
+    gap: 50px;
+    padding: 30px 15px 60px;
+  }
+
+  .remise {
+    right: -10px;
+    font-size: 22px;
+  }
+
+  .bouton {
+    padding: 7px 20px;
+  }
+
+  .prix {
+    font-size: 22px;
+  }
+
+  /* Pied de page : atouts sur deux colonnes */
+  .menu-pied {
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: none;
+    margin: 0 15px -25px;
+    padding: 12px 15px;
+  }
+
+  .menu-pied li + li::before {
+    margin-right: 10px;
+  }
+
+  .atouts {
+    flex-wrap: wrap;
+    gap: 20px 15px;
+    padding: 35px 15px 30px;
+  }
+
+  .atouts li {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  .reseaux {
+    gap: 35px;
+  }
+
+  .copyright {
+    padding: 0 15px;
+  }
+
+  /* Page 2 : les blocs s'empilent */
+  .intro {
+    padding: 25px 20px;
+  }
+
+  .intro h1 {
+    font-size: 26px;
+  }
+
+  .page {
+    padding: 0 15px 50px;
+  }
+
+  .histoire {
+    flex-direction: column;
+  }
+
+  .histoire-image {
+    width: 200px;
+  }
+
+  .chiffres {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .chiffres strong {
+    font-size: 26px;
+  }
+
+  .equipe {
+    grid-template-columns: 1fr;
+  }
+
+  .magasin {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .plan {
+    margin-top: 20px;
+  }
+
+  .formulaire {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
 }
