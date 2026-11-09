@@ -99,7 +99,98 @@
           </ul>
         </section>
 
-        <!-- Le magasin et le contact viendront ici (branche magasin-contact) -->
+        <!-- Le magasin -->
+        <section class="magasin">
+          <div class="magasin-infos">
+            <h2 class="titre-section">Le magasin</h2>
+            <address>
+              Sport.com — Boutique Bastille<br />
+              12 rue de la Roquette<br />
+              75011 Paris
+            </address>
+
+            <table class="horaires">
+              <caption>
+                Horaires d'ouverture
+              </caption>
+              <tbody>
+                <tr>
+                  <th scope="row">Lundi</th>
+                  <td>Fermé</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mardi – vendredi</th>
+                  <td>10 h – 19 h</td>
+                </tr>
+                <tr>
+                  <th scope="row">Samedi</th>
+                  <td>10 h – 20 h</td>
+                </tr>
+                <tr>
+                  <th scope="row">Dimanche</th>
+                  <td>Fermé</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <iframe
+            class="carte"
+            title="Carte : emplacement du magasin"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=2.3655%2C48.8515%2C2.3775%2C48.8565&amp;layer=mapnik&amp;marker=48.8540%2C2.3715"
+          ></iframe>
+        </section>
+
+        <!-- Contactez-nous -->
+        <section id="contact">
+          <h2 class="titre-section">Contactez-nous</h2>
+          <form class="formulaire" action="#" method="post">
+            <div class="champ">
+              <label for="nom">Nom et prénom</label>
+              <input type="text" id="nom" name="nom" required />
+            </div>
+
+            <div class="champ">
+              <label for="email">Adresse électronique</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="champ champ-large">
+              <label for="objet">Objet</label>
+              <select id="objet" name="objet" required>
+                <option value="produit">Question sur un produit</option>
+                <option value="commande">Suivi de commande</option>
+                <option value="magasin">Visite du magasin</option>
+                <option value="autre">Autre demande</option>
+              </select>
+            </div>
+
+            <div class="champ champ-large">
+              <label for="message">Votre message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="champ-large consentement">
+              <input
+                type="checkbox"
+                id="consentement"
+                name="consentement"
+                required
+              />
+              <label for="consentement"
+                >J'accepte que mes données soient utilisées pour répondre à ma
+                demande.</label
+              >
+            </div>
+
+            <button type="submit" class="bouton">Envoyer</button>
+          </form>
+        </section>
       </div>
     </main>
     <!-- ===== PIED DE PAGE ===== -->
