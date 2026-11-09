@@ -90,6 +90,12 @@ img {
   background-color: #3a3a3a;
   color: #fff;
   padding-bottom: 20px;
+  .pied {
+    display: flow-root;
+    background-color: #3a3a3a;
+    color: #fff;
+    padding-bottom: 20px;
+  }
 }
 
 /* Menu blanc arrondi, à cheval sur le contenu */
