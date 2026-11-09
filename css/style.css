@@ -248,3 +248,115 @@ img {
   color: #555;
   margin-right: 12px;
 }
+/* ===== PAGE QUI SOMMES-NOUS ===== */
+/* Bandeau de titre sombre avec trait orange */
+.intro {
+  background-color: #222;
+  color: #fff;
+  padding: 35px 40px 30px;
+  border-bottom: 4px solid #ea9f05;
+}
+
+.intro h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.intro p {
+  margin: 0;
+  color: #ddd;
+}
+
+.page {
+  padding: 10px 40px 60px;
+}
+
+/* Titres de section avec barre orange à gauche */
+.titre-section {
+  border-left: 5px solid #ea9f05;
+  padding-left: 12px;
+  font-size: 24px;
+  margin: 40px 0 20px;
+}
+
+/* Notre histoire : texte à gauche, image à droite */
+.histoire {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.histoire-texte {
+  flex: 1;
+}
+
+.histoire-texte p {
+  line-height: 1.6;
+}
+
+.histoire-image {
+  width: 260px;
+  background-color: #fff;
+  padding: 15px;
+}
+/* Nos chiffres clés : 4 cases */
+.chiffres {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chiffres li {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.chiffres strong {
+  display: block;
+  color: #ea9f05;
+  font-size: 34px;
+}
+
+/* L'équipe : 3 cartes */
+.equipe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.equipe li {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Initiales dans un rond */
+.initiales {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #222;
+  color: #ea9f05;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.equipe h3 {
+  margin: 12px 0 6px;
+}
+
+.equipe p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
