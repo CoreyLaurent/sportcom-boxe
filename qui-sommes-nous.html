@@ -141,7 +141,56 @@
           ></iframe>
         </section>
 
-        <!-- Le formulaire viendra ici -->
+        <!-- Contactez-nous -->
+        <section id="contact">
+          <h2 class="titre-section">Contactez-nous</h2>
+          <form class="formulaire" action="#" method="post">
+            <div class="champ">
+              <label for="nom">Nom et prénom</label>
+              <input type="text" id="nom" name="nom" required />
+            </div>
+
+            <div class="champ">
+              <label for="email">Adresse électronique</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="champ champ-large">
+              <label for="objet">Objet</label>
+              <select id="objet" name="objet" required>
+                <option value="produit">Question sur un produit</option>
+                <option value="commande">Suivi de commande</option>
+                <option value="magasin">Visite du magasin</option>
+                <option value="autre">Autre demande</option>
+              </select>
+            </div>
+
+            <div class="champ champ-large">
+              <label for="message">Votre message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="champ-large consentement">
+              <input
+                type="checkbox"
+                id="consentement"
+                name="consentement"
+                required
+              />
+              <label for="consentement"
+                >J'accepte que mes données soient utilisées pour répondre à ma
+                demande.</label
+              >
+            </div>
+
+            <button type="submit" class="bouton">Envoyer</button>
+          </form>
+        </section>
       </div>
     </main>
     <!-- ===== PIED DE PAGE ===== -->

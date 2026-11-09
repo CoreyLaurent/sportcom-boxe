@@ -401,3 +401,44 @@ address {
   border: 0;
   margin-top: 40px;
 }
+/* Formulaire de contact */
+.formulaire {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px;
+  background-color: #fff;
+  padding: 25px;
+}
+
+.champ label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.champ input,
+.champ select,
+.champ textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #bbb;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+/* Champ qui prend toute la largeur */
+.champ-large {
+  grid-column: 1 / -1;
+}
+
+.consentement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.formulaire .bouton {
+  justify-self: start;
+  border: 0;
+  cursor: pointer;
+}
