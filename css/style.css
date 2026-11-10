@@ -442,7 +442,39 @@ address {
   border: 0;
   cursor: pointer;
 }
+/* ===== AMÉLIORATIONS ===== */
+/* Défilement doux vers le formulaire */
+html {
+  scroll-behavior: smooth;
+  /* Lien de la page actuelle en orange */
+  .menu a.actif {
+    color: #ea9f05;
+  }
+  /* Les produits se soulèvent au survol */
+  .carte {
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
 
+  .produit:hover .carte {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .bouton {
+    transition: background 0.2s;
+  }
+  /* Contour orange quand on navigue au clavier (touche Tab) */
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  button:focus-visible {
+    outline: 3px solid #ea9f05;
+    outline-offset: 2px;
+  }
+}
 /* ===== RESPONSIVE : téléphone (moins de 576 px) ===== */
 @media (max-width: 575px) {
   /* En-tête centré et empilé */
