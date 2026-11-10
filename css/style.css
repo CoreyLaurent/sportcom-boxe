@@ -475,6 +475,14 @@ html {
     outline-offset: 2px;
   }
 }
+/* ===== PAGES LÉGALES ===== */
+.legal p {
+  line-height: 1.6;
+}
+
+.legal a {
+  color: #b57a00;
+}
 /* ===== RESPONSIVE : téléphone (moins de 576 px) ===== */
 @media (max-width: 575px) {
   /* En-tête centré et empilé */
