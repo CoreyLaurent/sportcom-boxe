@@ -465,6 +465,15 @@ html {
   .bouton {
     transition: background 0.2s;
   }
+  /* Contour orange quand on navigue au clavier (touche Tab) */
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  button:focus-visible {
+    outline: 3px solid #ea9f05;
+    outline-offset: 2px;
+  }
 }
 /* ===== RESPONSIVE : téléphone (moins de 576 px) ===== */
 @media (max-width: 575px) {
