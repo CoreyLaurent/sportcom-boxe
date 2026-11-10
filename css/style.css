@@ -446,6 +446,10 @@ address {
 /* Défilement doux vers le formulaire */
 html {
   scroll-behavior: smooth;
+  /* Lien de la page actuelle en orange */
+  .menu a.actif {
+    color: #ea9f05;
+  }
 }
 /* ===== RESPONSIVE : téléphone (moins de 576 px) ===== */
 @media (max-width: 575px) {
