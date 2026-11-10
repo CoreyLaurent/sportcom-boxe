@@ -442,7 +442,11 @@ address {
   border: 0;
   cursor: pointer;
 }
-
+/* ===== AMÉLIORATIONS ===== */
+/* Défilement doux vers le formulaire */
+html {
+  scroll-behavior: smooth;
+}
 /* ===== RESPONSIVE : téléphone (moins de 576 px) ===== */
 @media (max-width: 575px) {
   /* En-tête centré et empilé */
